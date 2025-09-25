@@ -1,6 +1,7 @@
 {
   "name": "camera-showcase",
-  "author": "Tom Past (tompastor.fr)",
+  "author": "Tom Past edit by Maher Aounallah",
+  "homepage": "https://maheraounallah.github.io/projet-AGEOS/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -8,7 +9,9 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
     "@types/react": "^18.2.64",
