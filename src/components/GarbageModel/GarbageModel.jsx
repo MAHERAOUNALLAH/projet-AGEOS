@@ -50,6 +50,26 @@ export default function GarbageModel(props) {
     if (groupRef.current && currentSection.objectPosition) {
       const nextObjectPosition = nextSection.objectPosition || currentSection.objectPosition;
 
+      // Apply position if available
+      if (currentSection.objectPosition.position && nextObjectPosition.position) {
+        groupRef.current.position.x = lerp(
+          currentSection.objectPosition.position.x,
+          nextObjectPosition.position.x,
+          sectionProgress
+        );
+        groupRef.current.position.y = lerp(
+          currentSection.objectPosition.position.y,
+          nextObjectPosition.position.y,
+          sectionProgress
+        );
+        groupRef.current.position.z = lerp(
+          currentSection.objectPosition.position.z,
+          nextObjectPosition.position.z,
+          sectionProgress
+        );
+      }
+
+      // Apply rotation
       groupRef.current.rotation.x = lerp(
         currentSection.objectPosition.rotation.x,
         nextObjectPosition.rotation.x,

@@ -32,6 +32,7 @@ export const SECTIONS = [
       position: { x: 0, y: 1, z: 12 },
     },
     objectPosition: {
+      position: { x: 0, y: -1, z: 0 },
       rotation: { x: 0, y: Math.PI * 0.1, z: 0 },
     },
   },
@@ -56,6 +57,7 @@ export const SECTIONS = [
       zoom: 1,
     },
     objectPosition: {
+      position: { x: 0, y: -1, z: 0 },
       rotation: { x: Math.PI * 0.5, y: Math.PI * 0.5, z: 0 },
     },
   },
@@ -79,6 +81,7 @@ export const SECTIONS = [
       position: { x: 1.5, y: 1, z: 11 },
     },
     objectPosition: {
+      position: { x: 0, y: -1, z: 0 },
       rotation: { x: Math.PI / 2, y: Math.PI * 1, z: 0 },
     },
   },
@@ -101,6 +104,7 @@ export const SECTIONS = [
       position: { x: 2, y: 1, z: 12 },
     },
     objectPosition: {
+      position: { x: 0, y: -1, z: 0 },
       rotation: { x: 0, y: Math.PI * 1, z: 0 },
     },
   },
@@ -125,6 +129,7 @@ export const SECTIONS = [
       position: { x: 0, y: 1, z: 12 },
     },
     objectPosition: {
+      position: { x: 0, y: -1, z: 0 },
       rotation: { x: 0, y: Math.PI * 0.1, z: 0 },
     },
   },
